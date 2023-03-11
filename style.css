@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Gotham_Black';
+    src: url('assets/Gotham\ Black\ Regular.ttf') format('truetype');
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-content {
+    font-family: 'Gotham_Black';
+    margin-top: 100px;
+
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-family: 'Gotham_Black';
+    background-color: #EEEEEE;
+    height: 140px;
+} 
+
+.menu ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0%;
+    background-color: crimson;
+    height: 0.2rem;
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 25%;
+    width: 50%;
+    background-color: crimson;
+    height: 0.2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jovem-aprendiz-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.jovem-aprendiz-content img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.jovem-aprendiz-content h1 {
+    color: rgb(75, 75, 239);
+    font-family: 'Gotham_Black';
+}
+
+.menu-spacing {
+display: block;
+padding-top: 150px;
+
+}
+
+.nav-video {
+    width: 100%;
+    background: linear-gradient(rgb(45,46,135), transparent);
+
+}
+
+.vide-content {
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;;
+}
+.vide-content ul li a {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.vide-content ul {
+    gap: 100px;
+}
+
+.vide-content ul li a:hover {
+    color: #EA5B0C;
+}
+
+.video-home {
+    width: 100%;
+    height: 484px;
+    padding: 50px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+
+.video-container {
+    max-width: 1170px;
+    height: 414px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.video-contant {
+    max-width: 800px;
+    height: 105px;
+}
+
+.video-contant  {
+    display: block;
+}
+
+.conteudo-video h1 {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 60px;
+}
+
+.conteudo-video h2 {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.video-container .yellow-line {
+    width: 65px;
+    height: 6px;
+    background-color: yellow;
+    display: block;
+    border-radius: 5px 5px;
+    margin-bottom: 10px;
+}
+
+.svg-img {
+    text-align: center;
+    justify-content: center;
+}
+.svg-img img {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+.input-container {
+    width: 1010px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.input-conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check {
+    
+}

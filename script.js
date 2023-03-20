@@ -50,3 +50,18 @@ function exibirFuncionarios() {
     funcionariosContainer.appendChild(funcionarioDiv);
   }
 }
+   
+
+var imagensGeradas = [];
+
+document.getElementById("enviar-imagem").addEventListener("click", function() {
+  var arquivo = document.getElementById("selecionar-imagem").files[0];
+  var novaImagem = URL.createObjectURL(arquivo);
+  imagensGeradas.push(novaImagem);
+
+  var imagemElemento = document.createElement("img");
+  imagemElemento.src = novaImagem;
+
+  var container = document.getElementById("imagens-container");
+  container.appendChild(imagemElemento);
+}); 

@@ -245,6 +245,15 @@ padding: 10px;
   }
   
 
+  
+  #imagens-container img {
+    height: 204px;
+    width: 204px;
+    margin: 10px;
+    object-fit: cover;
+  }
+
+
 
 
 

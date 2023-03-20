@@ -98,7 +98,7 @@
      <h1>Gafin</h1>
    </section>
    <div class="gallery-container">
-     <div class="gallery-content">
+     <div id="gallery-contentt" class="gallery-content">
          <img src="assets/matheus-selfie.jpg" alt="">
          <img src="assets/matheus-selfie.jpg" alt="">
          <img src="assets/matheus-selfie.jpg" alt="">
@@ -106,22 +106,28 @@
          <img src="assets/matheus-selfie.jpg" alt="">
      </div>
    </div>
-   <button id="btn-adicionar-funcionario">Adicionar Funcionário</button>
-
-   <div id="form-funcionario" class="hidden">
-     <label for="nome">Nome:</label>
-     <input type="text" id="nome" name="nome">
-     <br>
-     <label for="cargo">Cargo:</label>
-     <input type="text" id="cargo" name="cargo">
-     <br>
-     <label for="imagem">Imagem:</label>
-     <input type="file" id="imagem" name="imagem">
-     <br>
-     <button id="btn-salvar-funcionario">Salvar</button>
-   </div>
+   <button id="enviar-imagem">Enviar imagem</button>
+   <input type="file" id="selecionar-imagem">
+   <div id="imagens-geradas"></div>
    
-   <div id="funcionarios-container"></div>    
+   <div id="imagens-container"></div>
+
+   <script>
+    var imagensGeradas = [];
+
+document.getElementById("enviar-imagem").addEventListener("click", function() {
+  var arquivo = document.getElementById("selecionar-imagem").files[0];
+  var novaImagem = URL.createObjectURL(arquivo);
+  imagensGeradas.push(novaImagem);
+
+  var imagemElemento = document.createElement("img");
+  imagemElemento.src = novaImagem;
+
+  var container = document.getElementById("gallery-contentt");
+  container.appendChild(imagemElemento);
+}); 
+
+   </script>
 </body>
   </section>
 </section>
